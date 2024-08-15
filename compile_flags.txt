@@ -1,2 +1,2 @@
 -IINCLUDE
--std=c99
+-std=c89
