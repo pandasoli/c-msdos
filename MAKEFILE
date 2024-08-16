@@ -12,7 +12,7 @@ C:BUILD\MAIN.EXE : $(OBJS)
 	$(CC) $(CFLAGS) -e$@ $(OBJS)
 
 C:BUILD\MAIN.OBJ : C:SRC\MAIN.c
-	$(CC) $(CFLAGS) -c -o$@ C:SRC\MAIN.c
-
 C:BUILD\LIB.OBJ : C:SRC\LIB.c
-	$(CC) $(CFLAGS) -c -o$@ C:SRC\LIB.c
+
+.c.obj:
+	$(CC) $(CFLAGS) -c -o$@ $<
