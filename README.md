@@ -6,7 +6,7 @@
 <br>
 <br>
 
-The code template used here is described at [msdos-compilation][msdos-compilation].  
+The code template used here is mostly described at [msdos-compilation][msdos-compilation].  
 Here are the links to [TC][tc] and [TASM][tasm].
 
 <div align=right>
