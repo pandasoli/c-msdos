@@ -2,7 +2,7 @@
 set -e
 
 executable="BUILD/MAIN.EXE"
-buildlog="BUILD/TCC.LOG"
+buildlog="BUILD/MAKE.LOG"
 
 if [ "$#" -eq 0 ]; then
 	args=("build" "run")
@@ -18,7 +18,7 @@ for arg in "${args[@]}"; do
 			# On Linux and Windows SDL_VIDEODRIVER=dummy and -noconsole options hide
 			# the DOSBox window (During the build step, we don't need to view the window)
 
-			SDL_VIDEODRIVER=dummy dosbox -conf ./build.dosbox.conf -noconsole
+			SDL_VIDEODRIVER=dummy dosbox -conf build.dosbox.conf -noconsole
 
 			if [ ! -f "$buildlog" ]; then
 				echo 'Error: No build log found.'
