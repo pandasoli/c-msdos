@@ -15,8 +15,8 @@ for arg in "${args[@]}"; do
 		'build')
 			[ ! -d BUILD ] && mkdir BUILD
 
-			# On Linux and Windows SDL_VIDEODRIVER=dummy and -noconsole options hide the DOSBox window
-			# (During the build step, we don't need to view the window)
+			# On Linux and Windows SDL_VIDEODRIVER=dummy and -noconsole options hide
+			# the DOSBox window (During the build step, we don't need to view the window)
 
 			SDL_VIDEODRIVER=dummy dosbox -conf ./build.dosbox.conf -noconsole
 

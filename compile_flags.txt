@@ -1,2 +1,3 @@
 -IINCLUDE
+-ITC/TC/INCLUDE
 -std=c89
