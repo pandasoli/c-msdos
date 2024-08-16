@@ -1,12 +1,12 @@
 
-void printb(char _ch) {
+void printb(char ch_) {
 	asm mov ah, 2h;
-	asm mov dl, _ch;
+	asm mov dl, ch_;
 	asm int 0x21;
 }
 
-void print(char *_str) {
+void print(char *str_) {
 	asm mov ah, 9h;
-	asm mov dx, _str;
+	asm mov dx, str_;
 	asm int 0x21;
 }
